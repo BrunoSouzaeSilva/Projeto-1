@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background-color: #222831;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: #EEEEEE;
+    width: 90%; /*vai ocupar até 90% da tela*/
+    max-width: 400px;/*largura máxima que ele alcansará*/
+    height: auto;/*altura*/
+    border-radius: 10px;
+
+    margin-top: 30px;
+    margin-left: auto;/*da div para fora*/
+    margin-right: auto;
+
+    padding: 30px;/*da div para dentro*/
+    box-sizing: border-box;/*faz com q as dimensões sejam respeitadas mesmo com o padding*/
+
+    text-align: center;
+}
+
+
+img{
+    width: 100px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: solid 5px #222831;
+
+    /*border-width: 5px;
+      border-color: #222831
+      border-style: solid*/
+
+}
+
+img:hover{
+    border: solid 5px #000000
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+h1 {
+    color: #393E46;
+    font-size: 32px;
+}
+
+h2 {
+    color: #222831;
+    font-size: 20px;
+}
+
+p{
+    color: #666666;
+}
+
+ul{
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a{
+    background-color: #393E46;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none; /*tira o sublinhado*/
+}
+
+ul a:hover{
+    background-color: #000000;
+}
+
+#link{
+    color: #222831;
+}
+
+#link:hover{
+    font-style: italic;
+}
+
+
+/*condição para ser aplicada em telas pequenas*/
+/*Midia Query*/
+
+@media (max-width: 414px){
+
+    h1{
+        font-size: 16px;
+    }
+
+    img{
+        width: 80px;
+    }
+
+    ul a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
